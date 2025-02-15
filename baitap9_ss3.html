@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phat Nguyen</title>
+</head>
+<body>
+    <form action="https://www.re1play.com/" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="dateofbirth">Ngày sinh:</label></td>
+                <td><input type="date" id="dateofbirth" name="dateofbirth"></td>
+            </tr>
+            <tr>
+                <td><label for="sex">Giới tính:</label></td>
+                <td>
+                    <input type="radio" name="sex" id="sex" value="Nam">
+                    <label for="sex">Nam</label>
+                    <input type="radio" name="sex" id="sex" value="Nữ">
+                    <label for="sex">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone number">Số điện thoại:</label></td>
+                <td><input type="number" name="phone number" id="phone number"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Địa chỉ:</label></td>
+                <td><textarea name="address" id="address" cols="25" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Member">Vai trò trong nhóm:</label></td>
+                <td><select name="Member" id="Member">
+                    <option value="Thành viên">Thành viên</option>
+                    <option value="Tổ trưởng">Tổ trưởng</option>
+                    <option value="Lớp phó học tập">Lớp phó học tập</option>
+                    <option value="Lớp phó văn nghệ">Lớp phó văn nghệ</option>
+                    <option value="Lớp trưởng">Lớp trưởng</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="interest">Sở thích:</label></td>
+                <td><input type="text" name="interest" id="interest"></td>
+            </tr>
+            <tr>
+                <td><label for="Skill">Kỹ năng:</label></td>
+                <td><textarea name="Skill" id="Skill" cols="25" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="free time">Thời gian rảnh:</label></td>
+                <td><input type="checkbox" name="free time" id="free time" value="Sáng">
+                    <label for="free time">Sáng</label>
+                    <input type="checkbox" name="free time" id="free time" value="Chiều">
+                    <label for="free time">Chiều</label>
+                    <input type="checkbox" name="free time" id="free time" value="Tối">
+                    <label for="free time">Tối</label></td>
+            </tr>
+            <tr>
+                <td><label for="Reason">Lý do tham gia nhóm:</label></td>
+                <td><textarea name="Reason" id="Reason" cols="25" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="favColor">Màu yêu thích:</label></td>
+                <td><input type="color" id="favColor" name="favColor"></td>
+            </tr>
+            <tr>
+                <td><label for="Newsletter">Đăng ký nhận bản tin:</label></td>
+                <td>
+                    <input type="checkbox" name="Newsletter" id="Newsletter" value="Có">
+                    <label for="Newsletter">Có</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Notification">Nhận thông báo qua email:</label></td>
+                <td>
+                    <input type="radio" name="Notification" id="Notification" value="Email">
+                    <label for="Notification">Email</label>
+                    <input type="radio" name="Notification" id="Notification" value="SMS">
+                    <label for="Notification">SMS</label>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <button>Đăng ký thành viên</button>
+    </form>
+</body>
+</html>
