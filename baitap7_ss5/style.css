@@ -1,0 +1,53 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+    border: 2px solid #ddd;
+    padding: 12px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.btn-view {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.btn-update {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+
+}
