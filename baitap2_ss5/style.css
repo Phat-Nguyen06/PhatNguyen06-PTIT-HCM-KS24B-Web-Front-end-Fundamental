@@ -1,0 +1,12 @@
+div {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: lime;
+    text-decoration: underline dotted aqua;
+}
