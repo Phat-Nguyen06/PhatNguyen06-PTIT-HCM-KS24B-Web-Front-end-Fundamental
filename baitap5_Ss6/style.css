@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+
+}
+
+.header {
+    background-color: #4CAF50; 
+     height: 48px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .header h5 {
+     padding: 0 20px;
+     color: #fff;
+ }
+ 
+ .header ul {
+     display: flex;
+     list-style-type: none;
+     text-decoration: none;
+ }
+ 
+ .header li {
+     padding: 0 20px;
+     color: #fff;
+ }
+ 
+ .header a {
+     
+ }
+
+ .content {
+
+ }
+.content .content-intro {
+    height: 295px;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .content-intro h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .content-intro p {
+    padding: 15px 0;
+}
+
+.content .content-intro button {
+    border: none;
+    background-color: #4CAF50;
+    padding: 9px 18px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.feature-list {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature-list .sub-feature {
+    background-color: #DDDDDD;
+    padding: 12px 210px;
+    border-radius: 5px;
+}
+
+.footer {
+    height: 48px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: #fff;
+}
