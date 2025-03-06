@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #353535;
+    height: fit-content;
+    width: fit-content;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    padding: 10px 15px;
+    width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 5px 5px;
+}
+
+.search-bar .ti-search {
+    font-size: 14px;
+    padding-right: 13px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    border: none;
+    padding-right: 228px;
+}
+
+.search-bar .ti-microphone {
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.search-bar .ti-camera {
+    padding: 0 8px;
+    cursor: pointer;
+}
