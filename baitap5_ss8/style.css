@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: fit-centent;
+    border: 3px #ccc solid;
+    border-radius: 10px;
+}
+
+.container h2 {
+text-align: center;
+opacity: 0.4;
+margin: 15px 0;
+}
+
+.container .description {
+text-align: center;
+opacity: 0.5;
+margin-bottom: 40px;
+line-height: 1.4;
+}
+
+.divider {
+    width: 50px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px auto 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.buttons .btn {
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.buttons .download {
+    margin-right: 13px;
+    background-color: #4696E5;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+
+.buttons .learn-more {
+    color: #828282;
+    background-color: #fff;
+    border: 2px #EEEEEE solid ;
+    font-weight: 700;
+}
+
+.footer {
+    margin-top: 55px;
+    background-color: #EEEEEE;
+}
+
+.footer .social-icons {
+     padding-top: 55px;
+     padding-bottom: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.social-icons,
+.ti-twitter,
+.ti-instagram {
+    padding: 0 10px;
+    opacity: 0.6;
+    font-weight: 600;
+    font-size: 20px;
+} 
+
+.footer .credits {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     opacity: 0.4;
+     padding-bottom: 30px;
+}
