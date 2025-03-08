@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 315px;
+    background-image: url('https://betuduy.vn/wp-content/uploads/2016/09/M%E1%BA%B9-b%C3%AAn-con.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.banner h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 80px;
+    left: 25px;
+}
+
+.banner p {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid .card-item {
+    height: 165px;
+    position: relative;
+}
+
+.grid .item1 {
+    background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGsaTVtd-gzWU8ViT34h09LASyzuwrwfkSD7lfBzaTVkdOJiPV');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid .item2 {
+    background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThSkcIjNANAx4RvoXRopAyKf4xPR0bXUn9yYue3XeSduxEu0fF');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid .item3 {
+     background-image: url('https://i0.wp.com/www.gratitudegraceglamour.com/wp-content/uploads/2024/12/IMG_4296-scaled.jpeg?resize=300,300&ssl=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid .item4 {
+     background-image: url('https://suckhoedoisong.qltns.mediacdn.vn/thumb_w/1200/324455921873985536/2022/3/23/104253-1648037915953908604519-0-0-585-936-crop-16480379345461565530390.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid .item5 {
+     background-image: url('https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-busine_1258-52760.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid .item6 {
+     background-image: url('https://salt.tikicdn.com/cache/w750/ts/product/23/83/6b/0696d7acb48360892d8e44807999a06f.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.grid h3 {
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+    left: 25px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.grid p {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.item5 p {
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+    left: 25px;
+}
+
+.card-item button {
+    color: red;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    border: none;
+    padding: 8px 130px;
+    border-radius: 5px;
+    color: #800000;
+    cursor: pointer;
+}
