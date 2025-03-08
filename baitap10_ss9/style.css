@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 145px;
+    background-color: #009BE5;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.header h1 {
+    margin-top: 40px;
+    color: #fff;
+    font-weight: 450;
+}
+
+.header .header-left {
+
+}
+
+.header-left .nav {
+    display: flex;
+}
+
+.header-left .nav li {
+    margin-top: 20px;
+    list-style-type: none;
+    margin-right: 35px;
+    opacity: 0.5;
+    padding-bottom: 11px;
+}
+
+.header-left .nav li:hover {
+    opacity: 1;
+    border-bottom: 4px solid #fff;
+}
+
+.header-left .nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .header-right {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.header-right .user-infor {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right .user-infor a {
+    text-decoration: none;
+    opacity: 0.5;
+    color: #fff;
+}
+
+.header-right .user-infor .ti-bell {
+    color: #fff;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.header-right .user-infor img {
+    height: 26px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-right .advise {
+    position: absolute;
+    margin-top: 20px;
+    right: 0;
+}
+
+.header-right .advise .setup-btn {
+    color: #fff;
+    background-color: #009BE5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: #fff 1px solid ;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header-right .advise .ti-help {
+    color: #009BE5;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 4px 4px;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    height: fit-content;
+    background-color: #EAEFF1;
+    padding: 40px 90px;
+}
+
+.content .search {
+    width: 100%;
+}
+
+.search .search-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    border-start-start-radius: 5px;
+    border-bottom: 1px #D8D8D8 solid;
+}
+
+.search .search-bar .ti-search {
+    padding: 15px 20px;
+    font-weight: 800;
+}
+
+.search .search-bar input {
+    width: 85%;
+    border: none;
+    font-size: 15px;
+    background-color: #F5F5F5;
+    opacity: 0.8;
+}
+
+.search .search-bar .add-btn {
+    margin-left: 5px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    color: #fff;
+    background: #009BE5;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search .search-bar .ti-reload {
+    margin-left: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.search .search-infor {
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 140px;
+    border-end-end-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .search-infor p {
+    opacity: 0.5;
+}
