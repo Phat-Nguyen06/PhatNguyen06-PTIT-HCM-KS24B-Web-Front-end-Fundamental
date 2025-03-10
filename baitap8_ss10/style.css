@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    padding: 0 90px;
+}
+
+/* Phần đầu */
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header .nav {
+    display: flex;
+    margin-right: 100px;
+}
+
+.header .nav li {
+    list-style-type: none;
+    padding: 0 5px;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 540;
+}
+
+.header .icon-e-paper {
+    color: #0F7BFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Kẻ ngang */
+.divider-bot-header {
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+/* Phần content */
+.content {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.main-news {
+    width: 200%;
+    position: relative;
+}
+
+.main-news img {
+     width: 100%;
+}
+
+.main-news .news-content {
+    width: 90%;
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    background-color: #fff;
+}
+
+.main-news .news-content h2 {
+    margin: 10px;
+    font-size: 20px;
+    font-size: bold;
+}
+
+.main-news .news-content p {
+    font-size: 15px;
+    line-height: 1.4;
+    
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.sidebar .top-stories {
+    width: 100%;
+}
+
+.sidebar .top-stories h3 {
+    width: 45%;
+    background-color: #FBFF22;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+
+.sidebar .top-stories li {
+    list-style-type: none;
+    padding: 10px 0;
+    border-bottom: #ccc 1px solid;
+}
+
+
+.quick-bites {
+    width: 100%;
+    height: fit-content;
+}
+
+.quick-bites h3 {
+    width: 45%;
+    background-color: #FBFF22;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+
+.quick-bites .stocks-sell {
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+.quick-bites > h4 {
+   margin: 0 10px;
+}
+
+.quick-bites p {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.quick-bites a {
+    text-decoration: none;
+    color: #167DFF;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    margin: 0 10px;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.quick-bites .get-infor-email {
+    margin-top: 20px;
+}
+
+.quick-bites .get-infor-email h4 {
+    color: #167DFF;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.quick-bites .get-infor-email .send-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-infor-email .send-email input {
+    border: none;
+    padding: 8px 0;
+    width: 70%;
+}
+
+.get-infor-email .send-email button {
+    width: 25%;
+    background-color: #167DFF;
+    color: #fff;
+    border: none;
+}
