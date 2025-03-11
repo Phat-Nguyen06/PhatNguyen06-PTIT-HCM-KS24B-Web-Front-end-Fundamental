@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    padding: 10px 25px;
+}
+
+.header {
+    background-color: #AC006E;
+    height: 250px;
+    width: 100%;
+}
+
+.content {
+    margin: 10px 0px;
+}
+
+.content .content-row-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.content .content-row-1 .content-1 {
+    background-color: #DB317F;
+    height: 60px;
+    width: calc(25% - 10px);
+}
+
+.content .content-row-1 .content-2 {
+    background-color: #DB317F;
+    height: 60px;
+    width: calc(25% - 10px);
+}
+
+.content .content-row-1 .content-3 {
+    background-color: #DB317F;
+    height: 60px;
+    width: calc(25% - 10px);
+}
+
+.content .content-row-1 .content-4 {
+    background-color: #DB317F;
+    height: 60px;
+    width: calc(25% - 10px);
+}
+
+.content .content-row-2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.content .content-row-2 .content-5 {
+    background-color: #DE5D9E;
+    width: calc(50% - 10px);
+    height: 100px;
+}
+
+.content .content-row-2 .content-6 {
+    background-color: #DE5D9E;
+    width: calc(50% - 10px);
+    height: 100px;
+}
+
+.footer {
+    background-color: #ED7BB8;
+    width: 100%;
+    height: 200px;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content .content-row-1 .content-1 {
+        width: calc(50% - 10px);
+    }
+    
+    .content .content-row-1 .content-2 {
+        width: calc(50% - 10px);
+    }
+    
+    .content .content-row-1 .content-3 {
+        width: calc(50% - 10px);
+    }
+    
+    .content .content-row-1 .content-4 {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .content .content-row-1 .content-1 {
+        width: 100%;
+    }
+    
+    .content .content-row-1 .content-2 {
+        width: 100%;
+    }
+    
+    .content .content-row-1 .content-3 {
+        width: 100%;
+    }
+    
+    .content .content-row-1 .content-4 {
+        width: 100%;
+    }
+
+    .content .content-row-2 .content-5 {
+        width: 100%;
+    }
+    
+    .content .content-row-2 .content-6 {
+        width: 100%;
+    }
+}
