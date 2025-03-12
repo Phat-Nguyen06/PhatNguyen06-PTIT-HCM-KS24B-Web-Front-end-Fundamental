@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+}
+
+.card .card-title {
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    font-weight: bold;
+}
+
+.card .card-location {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.card .card-time {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    font-weight: bold;
+    font-size: 12px;
+}
