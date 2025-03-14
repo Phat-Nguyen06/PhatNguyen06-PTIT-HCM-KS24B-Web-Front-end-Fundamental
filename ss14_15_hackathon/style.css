@@ -5,15 +5,19 @@
 }
 
 .container {
-    width: 100%;
+    width: 1440px;
 }
 
 .header {
     background-color: #FFFFFF;
-    width: 1440px;
+    width: 100%;
     height: 68px;
     display: flex;
     padding: 16px 80px;
+    flex-wrap: wrap;
+}
+.header .fa-solid {
+    display: none;
 }
 
 .header .header-logo-img {
@@ -25,7 +29,6 @@
     letter-spacing: -2%;
     vertical-align: middle;
     text-align: center;
-    
 }
 
 .header .header-nav {
@@ -33,6 +36,7 @@
     margin-right: 48px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header .header-nav li {
@@ -89,6 +93,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 48px;
+    flex-wrap: wrap;
 }
 
 .about-me .box-about-me .about-text {
@@ -419,3 +424,302 @@
 
 
 
+
+
+
+
+@media (max-width: 375px) {
+    .container {
+        width: 375px;
+    }
+
+    /* header */
+    .header {
+        width: 100%;
+        height: 68px;
+        padding: 16px 16px;
+    }
+
+    .header .fa-solid {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        margin-left: 211px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .header-logo-img {
+        
+    }
+    
+    .header .header-nav {
+        display: none;
+    }
+    
+    .header .header-toolbar {
+        display: none;
+    }
+    
+    /* About me */
+    .about-me {
+        width: 100%;    
+        height: 880px;
+        background-color: #FFFFFF;
+        padding: 64px 16px;
+    }
+    
+    .about-me .box-about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+
+    .box-about-me .about-image {
+        width: 91.4%;
+    }
+    
+    .box-about-me .about-image .about-box-img {
+        background-color: #E5E7EB;
+        width: 280px;
+        height: 280px;
+        border-radius: 8px;
+        margin: 0 31.5px;
+        position: relative;
+    }
+    
+    .about-image .about-box-img img {
+        height: 280px;
+        width: 240px;
+        border-radius: 8px;
+        position: absolute;
+        right: 19.5px;
+        bottom: 20px;
+    }
+    
+    .about-me .box-about-me .about-text {
+        width: 91.4%;
+        padding-left: 0px;
+    }
+
+    
+    .box-about-me .about-text h1 {
+        width: 280px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0%;
+        color: #111827;
+    }
+    
+    .box-about-me .about-text .about-description {
+        width: 343px;
+        height: 168px;
+        color: #4B5563;
+    }
+    /*  */
+    .box-about-me .about-text .about-info {
+        width: 91.4%;
+    }
+    
+    .about-text .about-info .about-1 {
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .about-text .about-info .about-1 i {
+        width: 36px;
+        height: 36px;
+        margin-right: 8px;
+    }
+    
+    .about-text .about-info .about-2 {
+        display: flex;
+        align-items: center;
+    }
+    
+    .about-text .about-info .about-2 img {
+        width: 36px;
+        height: 36px;
+        margin-right: 8px;
+
+    }
+    
+    .about-text .about-info .about-2 p {
+        
+    }
+    
+    .about-text .social-links {
+        display: flex;
+        width: 91.4%;
+    }
+    
+    .about-text .social-links i {
+        margin-right: 4px;
+    }
+/*  */
+
+.skills-section {
+    /* align-items: center; */
+    width: 100%;
+    height: 580px;
+}
+
+.skills-section .skills-box {
+    width: 91.4%;
+    height: 452px;
+    margin: 64px 16px;
+}
+
+.skills-box .skills-title,
+.projects-section .projects-title {
+    width: 100%;
+}
+
+.skills-box .skills-title h6, 
+.projects-section .projects-title h6 {
+    width: 35px;
+    height: 20px;
+}
+
+.skills-section .skills-description, 
+.projects-section .projects-description {
+    height: 56px;
+    width: 100%;  
+    margin-bottom: 24px;
+}
+
+.skills-section .skills-description p, 
+.projects-section .projects-description p {
+    width: 343px;
+    height: 56px;
+    max-width: 576px;
+    font-size: 18px;
+}
+
+.skills-section .skills-list {
+    width: 91.4%;
+    height: 328px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .skills-list .skill-item {
+
+}
+
+.skills-list .skill-item .img-skill {
+
+}
+
+.skills-list .skill-item .skill-name {
+    width: 80px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Inter;
+    line-height: 24px;
+    color: #4B5563;
+    text-align: center;
+}
+/*  */
+.projects-section {
+   width: 100%;
+}
+
+.projects-section .project-box {
+    margin: 64px 16px;
+    width: 91.4%;
+}
+
+.projects-list {
+    height: fit-content;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-list .project-card-img {
+    width: 100%;
+    background-color: #F9FAFB;
+}
+
+.projects-list .project-card-img img {
+    width: 279px;
+    height: 192px;
+    border-radius: 12px;
+    margin: 32px;
+}
+
+.projects-list-2 {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.projects-list .project-card-infor {
+    margin: 32px;
+}
+
+.projects-list .project-card-infor h4 {
+    width: 279px;
+    height: 28px;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.projects-list .project-card-infor > p {
+    width: 279px;
+    height: 144px;
+    font-weight: 400;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B5563;
+    letter-spacing: 0%;
+}
+
+.projects-list .project-card-infor .project-tech {
+    height: 64px;
+    width: 91.4%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-card-infor .project-tech .project-sub-description {
+    height: 20px;
+}
+
+.project-card-infor i {
+
+}
+
+.footer {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 24px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #4B5563;
+}
+
+}
