@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phat Nguyen</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("Nhập a"));
+        let b = Number(prompt("Nhập b"));
+        let c = Number(prompt("Nhập c"));
+
+        let denta = Math.pow(b, 2) - (4 * a * c);
+        let x1 = (-b + Math.sqrt(denta)) / (2 * a);
+        let x2 = (-b - Math.sqrt(denta)) / (2 * a);
+
+        alert(`Phuong trinh co nghiem x1 = ${x1} và x2 = ${x2}`);
+    </script>
+</body>
+</html>
