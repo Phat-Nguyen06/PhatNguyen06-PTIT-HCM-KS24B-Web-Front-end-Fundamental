@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phat Nguyen</title>
+</head>
+<body>
+    <script>
+        let so_tien_gui = Number(prompt("Nhập vào số tiền gửi"));
+        let so_thang_gui = Number(prompt("Số tháng gửi"));
+
+        let lai = (so_tien_gui * (0.043 / 12)) *so_thang_gui;
+        lai = lai.toLocaleString("vi-VN") + " VNĐ";
+        alert(`Tiền lãi trong ${so_thang_gui} là ${lai}`);
+    </script>
+</body>
+</html>
