@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phat Nguyen</title>
+</head>
+<body>
+    <script>
+        let pi = Math.PI;
+
+        let ban_kinh = Number(prompt("Nhập vào bán kính"));
+        let chieu_cao = Number(prompt("Nhập vào chiều cao"));
+
+        // diện tích xung quanh hình chữ nhật
+        let dien_tich_xung_quanh = 2 * pi  * ban_kinh * chieu_cao;
+        let dien_tich_toan_phan = dien_tich_xung_quanh + 2 * pi * Math.pow(ban_kinh, 2);
+        let the_tich_hinh_tru = pi * Math.pow(ban_kinh, 2) * chieu_cao;
+        let chu_vi_day = 2 * pi * ban_kinh;
+
+        console.log(`Diện tích xung quanh hcn là: ${dien_tich_xung_quanh.toFixed(2)}`);
+        console.log(`Diện tích toàn phần là: ${dien_tich_toan_phan.toFixed(2)}`);
+        console.log(`Thể tích hình trụ là: ${the_tich_hinh_tru.toFixed(2)}`);
+        console.log(`Chu vi đáy là: ${chu_vi_day.toFixed(2)}`);
+
+    </script>
+</body>
+</html>
