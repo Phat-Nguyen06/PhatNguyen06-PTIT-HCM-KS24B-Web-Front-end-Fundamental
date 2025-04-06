@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px
+}
+
+.products-container {
+    width: calc(70% - 20px);
+}
+
+.products-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products-container .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product-grid .product-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-grid .product-item .product-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-grid .product-item .product-img:hover {
+    transform: scale(1.05);
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.product-grid .product-item .product-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin: 7px 0;
+}
+
+.product-grid .product-item .product-price {
+    color: rgb(230, 57, 70);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-grid .product-item .add-to-cart-btn {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cart-container {
+    width: calc(30% - 20px);
+    flex: 1 1 0%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.cart-container h2 {
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.cart-container #cart-items {
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    align-items: center;
+}
+
+.cart-container #cart-items .empty-cart {
+    text-align: center;
+    color: rgb(136, 136, 136);
+    padding: 20px 0px;
+}
+
+.cart-container .cart-total {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2em;
+}   
+
+.cart-container .checkout-btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: rgb(67, 97, 238);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-items {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px #ccc solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.cart-items .cart-item-info {
+    width: 45%;
+}
+
+.cart-items .cart-item-info .cart-item-title {
+    font-weight: bold;
+}
+
+.cart-items .cart-item-info .cart-item-price {
+    color: rgb(230, 57, 70);
+}
+
+.cart-items .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-items .quantity-controls .decrease-btn {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cart-items .quantity-controls span {
+
+}
+
+.cart-items .quantity-controls .increase-btn {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cart-items .quantity-controls .remove {
+    background-color: rgb(230, 57, 70);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+/*  */
+
+/* Animation khi thêm sản phẩm vào giỏ hàng */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+}
+
+/* Áp dụng khi thêm */
+.cart-items.animate-add {
+    animation: slideIn 0.4s ease forwards;
+}
+
+/* Áp dụng khi xóa (sẽ xử lý bằng JS) */
+.cart-items.animate-remove {
+    animation: slideOut 0.4s ease forwards;
+}
