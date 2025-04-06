@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 100px;
+}
+
+#message_valid {
+    color: #048100;
+    margin: 2px 0;
+    display: none;
+}
+
+#message_error {
+    color: red;
+    margin: 2px 0;
+    display: none;
+}
+
+#btn-check {
+    margin: 3px 0;
+}
+
+#email {
+    width: 205px;
+    padding: 5px 10px;
+}
