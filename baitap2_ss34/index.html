@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" class="form">
+        <input type="text" id="content" name="content" placeholder="content">
+        <input type="date" id="date" name="date">
+        <select name="choose" id="choose">
+            <option value="Pending">Choose Status</option>
+        </select>
+        <input type="text" name="Username" id="Username" placeholder="Username">
+        <button class="btn">submit</button>
+    </form>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Content</th>
+                    <th>Due date</th>
+                    <th>Status</th>
+                    <th>Assigned to</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr-td">
+                    <td>1</td>
+                    <td>Learn javascript Session 01</td>
+                    <td>2024-04-17</td>
+                    <td>Pending</td>
+                    <td>Anh Bach</td>
+                    <td><button class="sua">Sua</button><button class="xoa">Xoa</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

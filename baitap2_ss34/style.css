@@ -1,0 +1,49 @@
+.form{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+input, button, select{
+    width: 150px;
+    height: 40px;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+}
+#content{
+    width: 200px;
+}
+select{
+    width: 200px;
+}
+#Username{
+    width: 200px;
+}
+.sua, .xoa{
+    width: 50px;
+    height: 30px;
+}
+button{
+    cursor: pointer;
+}
+button:active{
+    background-color: rgb(139, 126, 109);
+    transition: 1s all;
+}
+.table{
+    width: 1000px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+tr{
+    border-bottom: 1px solid black;
+}
+td, th{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    min-width: 20px;
+    text-align: center;
+    border-bottom: 0.5px solid #ccc;
+}
+
