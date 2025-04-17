@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table th, table td{
+    width: 180px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.direction-column{
+    flex-direction: column;
+}
+.flex-justify-s-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-mini td{
+    border: 0.5px solid #ccc;
+    width: 300px;
+    height: 40px;
+}
+
+.f-mini tr input{
+    width: 180px;
+    height: 25px;
+}
+.form{
+    padding: 10px;
+}
+
