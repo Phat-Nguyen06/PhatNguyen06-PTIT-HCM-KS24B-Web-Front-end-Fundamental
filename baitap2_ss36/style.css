@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    height: 0;
+}
+
+.container{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+span{
+    display: none;
+}
+.box{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#se{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+input, #luu{
+    width: 60%;
+    height: 80%;
+}
+#luu{
+    width: 20%;
+}
+#change{
+    width: 100px;
+    height: 40px;
+    display: none;
+}
+.none{
+    display: none   ;
+}
